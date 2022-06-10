@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;600;700&display=swap");
+
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+  font-family: "Spline Sans", sans-serif;
+}
+
+main {
+  height: 100%;
+  background: #afade2;
+}
+
+*::selection {
+  background: transparent;
+}
+
+:root {
+  --color-title: #696ca7;
+  --color-cta-bg: rgba(56, 63, 126, 0.6);
+  --color-cta-text: #b2afe4;
+  --color-highlight: #383f7e;
+  --color-text-main: rgba(56, 63, 126, 0.6);
+}

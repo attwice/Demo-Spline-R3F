@@ -1,0 +1,153 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.container header {
+  position: absolute;
+  top: 70px;
+  left: 62px;
+}
+
+.container header h1 {
+  font-weight: 600;
+  font-size: 54px;
+  margin: 11px 0;
+  color: var(--color-title);
+}
+
+.container strong {
+  color: var(--color-highlight);
+}
+
+.container header sup {
+  display: inline-block;
+  color: var(--color-cta-text);
+  background: var(--color-cta-bg);
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 151.5%;
+  padding: 1px 9px;
+  position: relative;
+  top: -29px;
+  left: -25px;
+}
+
+.container nav,
+.container section {
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.container nav a {
+  display: block;
+  color: var(--color-text-main);
+}
+
+.selected {
+  color: var(--color-highlight) !important;
+}
+
+.container section {
+  width: 382px;
+  position: absolute;
+  bottom: 186px;
+  left: 62px;
+  color: var(--color-text-main);
+}
+
+.container a {
+  text-decoration: none;
+  color: var(--color-highlight);
+}
+
+.container a:hover {
+  text-decoration: underline;
+  color: var(--color-highlight);
+}
+
+.container section strong {
+  font-weight: 400;
+}
+
+.container footer {
+  position: absolute;
+  bottom: 60px;
+  left: 62px;
+  color: var(--color-text-main);
+  font-size: 16px;
+  line-height: 19px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container header {
+    top: 38px;
+    left: 38px;
+  }
+
+  .container header h1 {
+    font-size: 48px;
+  }
+
+  .container header sup {
+    font-size: 12px;
+    padding: 3px 10px;
+    top: -24px;
+    left: -24px;
+  }
+
+  .container nav,
+  .container section {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .container section {
+    width: 298px;
+    left: 38px;
+  }
+
+  .container footer {
+    left: 38px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container header {
+    top: 20px;
+    left: 20px;
+  }
+
+  .container header h1 {
+    font-size: 36px;
+  }
+
+  .container header sup {
+    font-size: 11px;
+    padding: 2px 8px;
+    top: -20px;
+    left: -18px;
+  }
+
+  .container nav,
+  .container section {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .container section {
+    width: 228px;
+    left: 20px;
+    bottom: 70px;
+  }
+
+  .container footer {
+    left: 20px;
+    bottom: 20px;
+    font-size: 13px;
+  }
+}

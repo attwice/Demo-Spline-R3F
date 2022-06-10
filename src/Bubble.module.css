@@ -1,0 +1,43 @@
+.container {
+  width: 130px;
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+  color: var(--color-text-main);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  position: relative;
+  right: 100%;
+  user-select: none;
+  will-change: transform;
+}
+
+.container::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+
+  border-left: 20px solid white;
+  position: absolute;
+  left: calc(100% - 2px);
+  bottom: 50%;
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    font-size: 16px;
+    line-height: 19px;
+    border-radius: 12px;
+    padding: 12px;
+  }
+  .container::after {
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+
+    border-left: 16px solid white;
+  }
+}
